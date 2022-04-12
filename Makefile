@@ -6,7 +6,7 @@
 #    By: abasarud <abasarud@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/11 10:33:06 by abasarud          #+#    #+#              #
-#    Updated: 2022/04/11 10:43:35 by abasarud         ###   ########.fr        #
+#    Updated: 2022/04/12 13:54:18 by abasarud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,16 @@ FILES = ft_atoi \
 		ft_tolower \
 		ft_toupper \
 
-FILES_B = ft_lstnew \	
+FILES_B = ft_lstnew \
+		  ft_lstadd_front \
+		  ft_lstsize \
+		  ft_lstlast \
+		  ft_lstadd_back \
+		  ft_lstdelone \
+		  ft_lstclear \
+		  ft_lstiter \
+		  ft_lstmap \
+
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
 SRCS_B = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES_B)))
