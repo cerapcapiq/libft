@@ -6,7 +6,7 @@
 #    By: abasarud <abasarud@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/11 10:33:06 by abasarud          #+#    #+#              #
-#    Updated: 2022/04/12 13:54:18 by abasarud         ###   ########.fr        #
+#    Updated: 2022/04/12 14:47:40 by abasarud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ FILES = ft_atoi \
 		ft_isprint \
 		ft_itoa \
 		ft_memchr \
+		ft_memcpy \
 		ft_memcmp \
 		ft_memmove \
 		ft_memset \

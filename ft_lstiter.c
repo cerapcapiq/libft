@@ -6,7 +6,7 @@
 /*   By: abasarud <abasarud@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 12:59:10 by abasarud          #+#    #+#             */
-/*   Updated: 2022/04/12 13:00:10 by abasarud         ###   ########.fr       */
+/*   Updated: 2022/04/12 15:57:29 by abasarud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		now = now->next;
 	}
 }
-

@@ -6,7 +6,7 @@
 /*   By: abasarud <abasarud@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 12:49:24 by abasarud          #+#    #+#             */
-/*   Updated: 2022/04/12 13:06:07 by abasarud         ###   ########.fr       */
+/*   Updated: 2022/04/12 16:26:17 by abasarud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,22 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*first;
 	t_list	*new;
+	t_list	*begin;
 
-	if (!f || !del)
+	if (lst == NULL || f == NULL)
 		return (NULL);
-	first = NULL;
+	begin = 0;
 	while (lst)
 	{
 		new = ft_lstnew((*f)(lst->content));
 		if (!new)
 		{
-			while (first)
-			{
-				new = first->next;
-				(*del)(first->content);
-				free(first);
-				first = new;
-			}
-			lst = NULL;
+			ft_lstclear(&begin, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&first, new);
+		ft_lstadd_back(&begin, new);
 		lst = lst->next;
 	}
-	return (first);
+	return (begin);
 }
